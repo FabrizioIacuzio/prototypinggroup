@@ -1,0 +1,11 @@
+venv/
+figma_export/node_modules/
+figma_export/dist/
+data/insightengine.db
+.env
+.git/
+__pycache__/
+**/*.pyc
+**/*.pyo
+report/
+*.md

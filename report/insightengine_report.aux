@@ -1,0 +1,22 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}The Problem We Wanted to Solve}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}What We Built}{1}{section.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \footnotesize  High-level architecture. The React frontend communicates with FastAPI over REST and SSE. The backend calls external APIs for LLM inference, market data, and review scraping, and persists auth data in SQLite.}}{1}{figure.1}\protected@file@percent }
+\newlabel{fig:sysarch}{{1}{1}{\footnotesize High-level architecture. The React frontend communicates with FastAPI over REST and SSE. The backend calls external APIs for LLM inference, market data, and review scraping, and persists auth data in SQLite}{figure.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}How the Architecture Actually Came Together}{1}{section.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \footnotesize  Four-stage SSE pipeline. Each stage emits a progress event to the frontend. Results overwrite the in-memory cache and serve all subsequent page loads.}}{2}{figure.2}\protected@file@percent }
+\newlabel{fig:pipeline}{{2}{2}{\footnotesize Four-stage SSE pipeline. Each stage emits a progress event to the frontend. Results overwrite the in-memory cache and serve all subsequent page loads}{figure.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \footnotesize  One pipeline run fans out to three independent views, each with its own chart set and insight bucket.}}{2}{figure.3}\protected@file@percent }
+\newlabel{fig:audience}{{3}{2}{\footnotesize One pipeline run fans out to three independent views, each with its own chart set and insight bucket}{figure.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}The Parts That Took the Most Time}{2}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Getting the LLM to Score Consistently}{2}{subsection.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \footnotesize  Per-review LLM scoring flow. Up to eight reviews run concurrently. Dimensions not mentioned in a review return null and are excluded from the per-company average.}}{2}{figure.4}\protected@file@percent }
+\newlabel{fig:scoring}{{4}{2}{\footnotesize Per-review LLM scoring flow. Up to eight reviews run concurrently. Dimensions not mentioned in a review return null and are excluded from the per-company average}{figure.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Scraping turned out not to be one thing}{2}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}What We Threw Away}{2}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}What We Learned About Building with AI}{3}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Where It Landed}{3}{section.7}\protected@file@percent }
+\gdef \@abspage@last{3}
